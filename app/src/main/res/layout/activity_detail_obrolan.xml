@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image_profile"
+            android:layout_width="55dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="55dp"
+            android:src="@drawable/user_image"/>
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Syamsidin"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/image_profile"
+            android:textSize="18sp"/>
+        <EditText
+            android:id="@+id/messageEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@null"
+            android:layout_toLeftOf="@+id/chatSendButton"
+            android:autoText="true"
+            android:hint="Ketik Pesan"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp" />
+
+        <ListView
+            android:id="@+id/messagesContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_marginBottom="20dp"
+            android:layout_above="@+id/messageEdit"
+            android:layout_below="@+id/meLbl"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:listSelector="@android:color/transparent"
+            android:transcriptMode="alwaysScroll"
+            android:divider="@null" />
+
+        <TextView
+            android:id="@+id/meLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:text=""
+            android:paddingLeft="20dp"
+            android:paddingTop="8dp"
+            android:layout_below="@+id/image_profile"
+            android:singleLine="false"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/friendLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:paddingTop="8dp"
+            android:layout_below="@+id/image_profile"
+            android:paddingRight="20dp"
+            android:textSize="15dp" />
+
+        <ImageButton
+            android:id="@+id/chatSendButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary"
+            android:src="@drawable/ic_menu_send"
+            android:textColor="@color/background_material_light"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true" />
+
+
+    </RelativeLayout>
+</LinearLayout>

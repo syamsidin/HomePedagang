@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_qr"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="QR Code Saya" />
+        <item
+            android:id="@+id/nav_pelanggan"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="Pelanggan" />
+        <item
+            android:id="@+id/nav_obrolan"
+            android:icon="@drawable/ic_chat_black_24dp"
+            android:title="Obrolan" />
+        <item
+            android:id="@+id/nav_cart"
+            android:icon="@drawable/ic_shopping_cart_black_24dp"
+            android:title="Pengaturan Dagangan" />
+        <item
+            android:id="@+id/nav_pengaturan"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Pengaturan Akun" />
+        <item
+            android:id="@+id/nav_logut"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="Keluar" />
+    </group>
+</menu>

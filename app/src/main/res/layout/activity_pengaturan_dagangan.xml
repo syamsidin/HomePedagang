@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="18dp"
+    android:paddingRight="18dp"
+    android:paddingTop="18dp"
+    android:paddingLeft="18dp"
+    tools:context="com.syamsidin.homepedagang.activity.PengaturanDaganganActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/image_top"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true" />
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginBottom="13dp"
+                android:layout_marginRight="13dp"
+                android:background="@drawable/ic_menu_camera"
+                android:layout_alignBottom="@+id/image_top"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_below="@+id/rl_1">
+
+            <RelativeLayout
+                android:id="@+id/a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/nama_dagangan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/nama_dagangan"/>
+                <ImageButton
+                    android:id="@+id/edit_nama_dagangan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/ic_edit_black_24dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_below="@+id/a"
+                android:id="@+id/b"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/deskripsi_dagangan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:layout_centerVertical="true"
+                    android:text="@string/deskripsi_dagangan"  />
+                <ImageButton
+                    android:id="@+id/edit_deskripsi_dagangan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_edit_black_24dp"
+                    android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+            <TextView
+                android:id="@+id/type"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/b"
+                android:layout_marginBottom="5dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/type_bedagang"/>
+
+            <RadioGroup
+                android:id="@+id/radioType"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/type"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/radioDiam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/diam"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/radioBerkeliling"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/berkeliling" />
+                </LinearLayout>
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_below="@+id/rl2">
+            <TextView
+                android:id="@+id/list_produk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="List Porduk"/>
+
+            <ImageButton
+                android:id="@+id/btn_tambah"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/ic_add_box_black_24dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_below="@+id/list_produk"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content">
+                <include layout="@layout/list_produk" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

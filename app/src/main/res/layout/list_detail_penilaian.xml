@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_below="@+id/list_produk"
+    tools:context="com.syamsidin.homepedagang.activity.DetailPenilaianActivity">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="5dp"
+        android:layout_below="@+id/list_produk"
+        card_view:cardElevation="5dp"
+        card_view:cardUseCompatPadding="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/image"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true" />
+
+            <RatingBar
+                android:id="@+id/ratingBar2"
+                style="@android:style/Widget.DeviceDefault.Light.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_margin="8dp"
+                android:layout_below="@+id/img"
+                android:layout_alignEnd="@+id/img" />
+
+            <TextView
+                android:id="@+id/nama_prduk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img"
+                android:layout_margin="8dp"
+                android:text="Nama Produk"/>
+
+            <RatingBar
+                android:id="@+id/ratingBar3"
+                style="@android:style/Widget.DeviceDefault.Light.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_margin="8dp"
+                android:layout_below="@+id/nama_prduk"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/deskripsi_penilaian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ratingBar3"
+                android:layout_marginLeft="8dp"
+                android:text="Deskripsi Penilaian"/>
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="60dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="8dp"
+                android:layout_below="@id/deskripsi_penilaian"
+                android:layout_marginTop="12dp"
+
+                android:src="@drawable/user_image"/>
+            <TextView
+
+                android:id="@+id/judul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/icon"
+                android:layout_marginTop="12dp"
+                android:layout_below="@+id/deskripsi_penilaian"
+                android:textColor="#555"
+                android:text="Nama Pemberi Nilai"
+                />
+
+            <TextView
+
+                android:id="@+id/deskripsi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/judul"
+                android:layout_toRightOf="@id/icon"
+                android:textColor="#777"
+                android:text="Waktu Submit"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
