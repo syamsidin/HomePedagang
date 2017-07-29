@@ -1,5 +1,5 @@
-package com.syamsidin.homepedagang.activity;
-
+//package com.syamsidin.homepedagang.activity;
+//
 //import com.google.android.gms.maps.CameraUpdateFactory;
 //import com.google.android.gms.maps.GoogleMap;
 //import com.google.android.gms.maps.OnMapReadyCallback;
@@ -20,7 +20,7 @@ package com.syamsidin.homepedagang.activity;
 //
 //public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 //
-//    private GoogleMap mMap;
+////    private GoogleMap mMap;
 //
 //    @Override
 //    protected void onCreate(Bundle savedInstanceState) {
