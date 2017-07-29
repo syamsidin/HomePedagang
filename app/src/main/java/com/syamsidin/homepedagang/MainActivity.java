@@ -19,7 +19,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.syamsidin.homepedagang.activity.ListObrolanActivity;
-//import com.syamsidin.homepedagang.activity.MapsActivity;
+import com.syamsidin.homepedagang.activity.MapsActivity;
 import com.syamsidin.homepedagang.activity.PelangganActivity;
 import com.syamsidin.homepedagang.activity.PengaturanActivity;
 import com.syamsidin.homepedagang.activity.PengaturanDaganganActivity;
@@ -29,12 +29,6 @@ import com.syamsidin.homepedagang.fragment.StatistikFragment;
 
 import java.util.ArrayList;
 import java.util.List;
-//import com.google.android.gms.maps.CameraUpdateFactory;
-//import com.google.android.gms.maps.GoogleMap;
-//import com.google.android.gms.maps.OnMapReadyCallback;
-//import com.google.android.gms.maps.SupportMapFragment;
-//import com.google.android.gms.maps.model.LatLng;
-//import com.google.android.gms.maps.model.MarkerOptions;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -59,8 +53,8 @@ public class MainActivity extends AppCompatActivity
         image.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent = new Intent(MainActivity.this, MapsActivity.class);
-//                startActivity(intent);
+                Intent intent = new Intent(MainActivity.this, MapsActivity.class);
+                startActivity(intent);
             }
         });
         viewPager = (ViewPager) findViewById(R.id.viewpager);
