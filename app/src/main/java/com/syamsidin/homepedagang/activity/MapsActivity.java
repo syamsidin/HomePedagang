@@ -1,4 +1,4 @@
-//package com.syamsidin.homepedagang.activity;
+package com.syamsidin.homepedagang.activity;
 //
 //import com.google.android.gms.maps.CameraUpdateFactory;
 //import com.google.android.gms.maps.GoogleMap;
