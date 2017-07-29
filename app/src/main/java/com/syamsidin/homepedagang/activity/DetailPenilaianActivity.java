@@ -30,7 +30,7 @@ public class DetailPenilaianActivity extends AppCompatActivity {
     //neme di dalam bentuk array
     int [] image_produk = {R.drawable.image,R.drawable.image,R.drawable.image,R.drawable.image,R.drawable.image,R.drawable.image,R.drawable.image,R.drawable.image,R.drawable.image,R.drawable.image};
     String[] nama_produk = {"Martabak Coklat","Es Kalapa Muda","Coklat Susu","Tamulawak","Kolek Cau","Salak Pondoh","Sirup Marjan","Goreng Ulen","Tutug Oncom","Mie Tektek"};
-    String [] nama_pemberi ={"200 Penilaian","200 Penilaian","100 Penilaian","50 Penilaian","200 Penilaian","542 Penilaian","432 Penilaian","238 Penilaian","243 Penilaian","312 Penilaian"};
+    String [] nama_pemberi ={"Chandra Abdul","Diaz Chikal","Yusup Abdul","Rizky ","Yudi Mufti","Riki Sukmawan","Didin Anandi","Mulyati","Suandrian","Hanif Ibrahim"};
 
 
     @Override

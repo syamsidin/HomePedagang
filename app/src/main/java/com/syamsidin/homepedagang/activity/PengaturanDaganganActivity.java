@@ -2,14 +2,9 @@ package com.syamsidin.homepedagang.activity;
 
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.media.Image;
+import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.RadioButton;
@@ -80,7 +75,7 @@ public class PengaturanDaganganActivity extends AppCompatActivity {
                                 });
                         AlertDialog alert2 = builder2.create();
                         alert2.show();
-                        Toast.makeText(getApplicationContext(), "anda memeilih berkeliling!",
+                        Toast.makeText(getApplicationContext(), "Anda memeilih berkeliling!",
                                 Toast.LENGTH_LONG).show();
                         break;
                 }

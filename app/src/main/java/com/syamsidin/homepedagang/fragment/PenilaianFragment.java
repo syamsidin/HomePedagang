@@ -75,7 +75,6 @@ public class PenilaianFragment extends Fragment {
                     .getSerializable(KEY_LAYOUT_MANAGER);
         }
         setRecyclerViewLayoutManager(mCurrentLayoutManagerType);
-
         mAdapter = new AdapterPenilaian(mDataset,mDataset2,mDataset3);
         // Set CustomAdapter as the adapter for RecyclerView.
         mRecyclerView.setAdapter(mAdapter);
